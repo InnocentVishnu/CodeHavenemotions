@@ -1,0 +1,126 @@
+/* General Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    color: #333;
+}
+
+/* Video Container Styling */
+#video-container {
+    text-align: center;
+    margin-right: 40px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#video-container h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ac0606;
+}
+
+#video-container img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Emotion Container Styling */
+#emotion-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
+.emotion {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.emotion-label {
+    font-size: 1rem;
+    color: #555555;
+    font-weight: bold;
+}
+
+/* Slider Styling */
+.slider {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: background 0.3s;
+}
+
+.slider::-webkit-slider-runnable-track {
+    height: 10px;
+    background: linear-gradient(to right, #4caf50 0%, #4caf50 var(--value), #ddd var(--value), #ddd 100%);
+    border-radius: 5px;
+}
+
+.slider::-moz-range-track {
+    height: 10px;
+    background: linear-gradient(to right, #4caf50 0%, #4caf50 var(--value), #ddd var(--value), #ddd 100%);
+    border-radius: 5px;
+}
+
+.slider::-ms-track {
+    height: 10px;
+    background: linear-gradient(to right, #4caf50 0%, #4caf50 var(--value), #ddd var(--value), #ddd 100%);
+    border-radius: 5px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #4caf50;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: 2px solid #fff;
+}
+
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #4caf50;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: 2px solid #fff;
+}
+
+.slider::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    background: #4caf50;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: 2px solid #fff;
+}
+
+/* Percentage Label Styling */
+#emotion-container span {
+    font-size: 0.9rem;
+    color: #333;
+    display: inline-block;
+    text-align: right;
+}
